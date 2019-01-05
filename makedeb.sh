@@ -1,5 +1,7 @@
 echo "Getting BuildTools"
 sudo apt install tree
+
+# Creating Directories
 mkdir build
 cd build
 mkdir DEBIAN
@@ -9,11 +11,16 @@ mkdir local
 cd local
 mkdir bin
 cd ../../../
+
+# Move files over for building
 cp ./startxcli.sh ./build/usr/local/bin
-cd build
+cp ./control ./build/DEBIAN
+
+#####
+
+# Map all build files
+ls
 tree
 
-###
-
-cd ..
+# Delete Build
 rm -rf build
