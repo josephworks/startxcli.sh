@@ -18,7 +18,7 @@ cp ./control ./build/DEBIAN/
 
 # BUILDING ARTIFACT
 dpkg-deb --build build
-
+mv build.deb ./startxcli.deb
 
 # Map all build files
 ls
