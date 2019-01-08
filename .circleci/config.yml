@@ -1,7 +1,5 @@
 version: 2
 jobs:
-  docker:
-    - image: ubuntu
   build:
     docker:
       - image: ubuntu
