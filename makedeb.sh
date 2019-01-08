@@ -16,11 +16,13 @@ cd ../../../
 cp ./startxcli.sh ./build/usr/local/bin
 cp ./control ./build/DEBIAN/
 
+# BUILDING ARTIFACT
 dpkg-deb --build build
+
 
 # Map all build files
 ls
 tree
 
-# Delete Build
+# Delete Temporary Build Workspace
 rm -rf build
