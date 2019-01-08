@@ -1,10 +1,16 @@
 version: 2
 jobs:
+  docker:
+    - image: ubuntu
   build:
+    docker:
+      - image: ubuntu
     steps:
       - checkout
       - run: bash makedeb.sh
   test:
+    docker:
+      - image: ubuntu
     steps:
       - checkout
       - run: dpkg -i startxcli.deb && startxcli
