@@ -14,7 +14,7 @@ cd ../../../
 
 # Move files over for building
 cp ./startxcli.sh ./build/usr/local/bin
-cp ./control ./build/DEBIAN
+cp ./control ./build/DEBIAN/
 
 #####
 
