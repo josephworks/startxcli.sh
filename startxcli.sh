@@ -49,7 +49,7 @@ if [[ $REPLY = help ]]
 then
     echo "Commands:"
     echo "revert - reverts your .xinitrc file"
-    echo "exit - closes StartXCli"
+    echo "exit, close, quit - closes StartXCli"
     echo "i3 - starts I3"
     echo "lxde - starts LXDE"
     echo "xfce - starts XFCE4"
