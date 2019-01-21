@@ -23,6 +23,8 @@ fi
 if [[ $REPLY = revert ]]
 then
     sudo mv xinit .xinitrc
+    echo "Restored config!"
+    read -p "StartX> " -r
 fi
 
 if [[ $REPLY = help ]]
