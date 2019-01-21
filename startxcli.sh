@@ -35,4 +35,5 @@ then
     echo "gnome - starts the gnome shell"
     echo "openbox - starts OpenBox"
     echo "htop - opens htop"
+    read -p "StartX> " -r
 fi
