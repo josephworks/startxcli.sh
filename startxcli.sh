@@ -20,6 +20,11 @@ then
     read -p "StartX> " -r
 fi
 
+if [[ $REPLY = revert ]]
+then
+    sudo mv xinit .xinitrc
+fi
+
 if [[ $REPLY = help ]]
 then
     echo "Commands:"
