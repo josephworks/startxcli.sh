@@ -20,6 +20,7 @@ then
     read -p "StartX> " -r
 fi
 
+# Revert Command
 if [[ $REPLY = revert ]]
 then
     sudo mv xinit .xinitrc
@@ -27,10 +28,28 @@ then
     read -p "StartX> " -r
 fi
 
+############# Exit Commands
+if [[ $REPLY = exit ]]
+then
+    echo "Exited"
+fi
+
+if [[ $REPLY = close ]]
+then
+    echo "Exited"
+fi
+
+if [[ $REPLY = quit ]]
+then
+    echo "Exited"
+fi
+############
+
 if [[ $REPLY = help ]]
 then
     echo "Commands:"
     echo "revert - reverts your .xinitrc file"
+    echo "exit - closes StartXCli"
     echo "i3 - starts I3"
     echo "lxde - starts LXDE"
     echo "xfce - starts XFCE4"
