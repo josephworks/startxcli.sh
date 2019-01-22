@@ -104,7 +104,7 @@ then
 fi
 
 ########## Extras
-if [[ $REPLY = quit ]]
+if [[ $REPLY = htop ]]
 then
     htop
 fi
