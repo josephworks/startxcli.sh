@@ -20,6 +20,22 @@ then
     read -p "StartX> " -r
 fi
 
+if [[ $REPLY = help ]]
+then
+    echo "Commands:"
+    echo "revert - reverts your .xinitrc file"
+    echo "reset - resets the .xinitrc config"
+    echo "recent, last - starts the last desktop environment that you used"
+    echo "exit, close, quit - closes StartXCli"
+    echo "i3 - starts I3"
+    echo "lxde - starts LXDE"
+    echo "xfce - starts XFCE4"
+    echo "gnome - starts the gnome shell"
+    echo "openbox - starts OpenBox"
+    echo "htop - opens htop"
+    read -p "StartX> " -r
+fi
+
 ############# Exit Commands
 if [[ $REPLY = exit ]]
 then
@@ -36,22 +52,6 @@ then
     echo "Exited"
 fi
 ############
-
-if [[ $REPLY = help ]]
-then
-    echo "Commands:"
-    echo "revert - reverts your .xinitrc file"
-    echo "reset - resets the .xinitrc config"
-    echo "recent, last - starts the last desktop environment that you used"
-    echo "exit, close, quit - closes StartXCli"
-    echo "i3 - starts I3"
-    echo "lxde - starts LXDE"
-    echo "xfce - starts XFCE4"
-    echo "gnome - starts the gnome shell"
-    echo "openbox - starts OpenBox"
-    echo "htop - opens htop"
-    read -p "StartX> " -r
-fi
 
 ########## xinit config commands
 # Revert Command
