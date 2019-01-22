@@ -108,3 +108,8 @@ if [[ $REPLY = htop ]]
 then
     htop
 fi
+
+if [[ $REPLY = recent ]]
+then
+    startx
+fi
