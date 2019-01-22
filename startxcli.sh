@@ -20,22 +20,6 @@ then
     read -p "StartX> " -r
 fi
 
-# Revert Command
-if [[ $REPLY = revert ]]
-then
-    sudo mv xinit .xinitrc
-    echo "Restored config!"
-    read -p "StartX> " -r
-fi
-
-# Reset command
-if [[ $REPLY = reset ]]
-then
-    sudo rm .xinitrc
-    echo "Reseted xinitrc config!"
-    read -p "StartX> " -r
-fi
-
 ############# Exit Commands
 if [[ $REPLY = exit ]]
 then
@@ -58,6 +42,7 @@ then
     echo "Commands:"
     echo "revert - reverts your .xinitrc file"
     echo "reset - resets the .xinitrc config"
+    echo "recent, last - starts the last desktop environment that you used"
     echo "exit, close, quit - closes StartXCli"
     echo "i3 - starts I3"
     echo "lxde - starts LXDE"
@@ -65,6 +50,23 @@ then
     echo "gnome - starts the gnome shell"
     echo "openbox - starts OpenBox"
     echo "htop - opens htop"
+    read -p "StartX> " -r
+fi
+
+########## xinit config commands
+# Revert Command
+if [[ $REPLY = revert ]]
+then
+    sudo mv xinit .xinitrc
+    echo "Restored config!"
+    read -p "StartX> " -r
+fi
+
+# Reset command
+if [[ $REPLY = reset ]]
+then
+    sudo rm .xinitrc
+    echo "Reseted xinitrc config!"
     read -p "StartX> " -r
 fi
 
