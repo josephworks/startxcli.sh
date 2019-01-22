@@ -10,5 +10,5 @@
 # Start Gnome Desktop
 #gnome-shell
 
-# Start OpenBox
+# Start OpenBox (Implemented)
 #exec openbox
