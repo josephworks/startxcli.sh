@@ -7,7 +7,7 @@
 # Start XFCE (Implemented)
 #exec startxfce4
 
-# Start Gnome Desktop
+# Start Gnome Desktop (Implemented)
 #gnome-shell
 
 # Start OpenBox (Implemented)
