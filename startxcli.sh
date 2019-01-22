@@ -112,4 +112,5 @@ fi
 if [[ $REPLY = recent ]]
 then
     startx
+    echo "Opperation completed sucessfully!"
 fi
