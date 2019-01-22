@@ -114,3 +114,9 @@ then
     startx
     echo "Opperation completed sucessfully!"
 fi
+
+if [[ $REPLY = last ]]
+then
+    startx
+    echo "Opperation completed sucessfully!"
+fi
