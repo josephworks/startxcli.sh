@@ -28,6 +28,14 @@ then
     read -p "StartX> " -r
 fi
 
+# Reset command
+if [[ $REPLY = reset ]]
+then
+    sudo rm .xinitrc
+    echo "Reseted xinitrc config!"
+    read -p "StartX> " -r
+fi
+
 ############# Exit Commands
 if [[ $REPLY = exit ]]
 then
@@ -49,6 +57,7 @@ if [[ $REPLY = help ]]
 then
     echo "Commands:"
     echo "revert - reverts your .xinitrc file"
+    echo "reset - resets the .xinitrc config"
     echo "exit, close, quit - closes StartXCli"
     echo "i3 - starts I3"
     echo "lxde - starts LXDE"
