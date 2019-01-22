@@ -70,12 +70,6 @@ then
     read -p "StartX> " -r
 fi
 
-########## Extras
-if [[ $REPLY = quit ]]
-then
-    htop
-fi
-
 ########## Start Desktop Env Commands
 if [[ $REPLY = lxde ]]
 then
@@ -107,4 +101,10 @@ then
     echo "exec openbox" > ~/.xinitrc
     startx
     echo "Opperation completed sucessfully!"
+fi
+
+########## Extras
+if [[ $REPLY = quit ]]
+then
+    htop
 fi
