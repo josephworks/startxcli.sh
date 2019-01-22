@@ -4,7 +4,7 @@
 # Start LXDE (Implemented)
 #startlxde
 
-# Start XFCE
+# Start XFCE (Implemented)
 #exec startxfce4
 
 # Start Gnome Desktop
