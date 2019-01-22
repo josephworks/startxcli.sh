@@ -1,7 +1,7 @@
 # Start i3
 #exec i3
 
-# Start LXDE
+# Start LXDE (Implemented)
 #startlxde
 
 # Start XFCE
