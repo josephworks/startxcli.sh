@@ -67,3 +67,9 @@ then
     echo "htop - opens htop"
     read -p "StartX> " -r
 fi
+
+########## Extras
+if [[ $REPLY = quit ]]
+then
+    htop
+fi
