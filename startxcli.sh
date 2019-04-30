@@ -126,6 +126,11 @@ then
     htop
 fi
 
+if [[ $REPLY = iptraf ]]
+then
+    sudo iptraf-ng
+fi
+
 if [[ $REPLY = recent ]]
 then
     startx
