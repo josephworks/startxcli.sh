@@ -24,6 +24,7 @@ if [[ $REPLY = help ]]
 then
     echo "StartXCli.sh - V2"
     echo "A CLI used to start up a selected Desktop Environment in a TTY instance"
+    echo "SRC: https://github.com/josephworks/StartXCli.sh"
     echo ""
     echo "Commands:"
     echo "revert - reverts your .xinitrc file"
