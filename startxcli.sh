@@ -23,7 +23,7 @@ fi
 if [[ $REPLY = help ]]
 then
     echo "Commands:"
-    echo "revert - reverts your .xinitrc file"
+    echo "revert - reverts your .xinitrc file from latest backup"
     echo "reset - resets the .xinitrc config"
     echo "recent, last - starts the last desktop environment that you used"
     echo "exit, close, quit - closes StartXCli"
@@ -34,6 +34,7 @@ then
     echo "openbox - starts OpenBox"
     echo "fluxbox - starts FluxBox"
     echo "htop - opens htop"
+    echo "iptraf - opens iptraf-ng and displays network trafic"
     read -p "StartX> " -r
 fi
 
